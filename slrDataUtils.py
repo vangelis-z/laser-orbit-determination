@@ -7,7 +7,7 @@ import os
 
 from org.orekit.files.ilrs import CRDParser
 from org.orekit.data import DataSource
-from orekit.pyhelpers import absolutedate_to_datetime
+from orekit_jpype.pyhelpers import absolutedate_to_datetime
 from org.orekit.time import AbsoluteDate
 from org.orekit.time import TimeScalesFactory
 

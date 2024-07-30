@@ -7,24 +7,39 @@ The open-source orbital dynamics library Orekit (https://www.orekit.org/) is use
 # Installation
 ## Notes on Orekit versions
 
-The Orekit example notebooks are based on Orekit 12.0.1 (previously 10.2 IIRC). The Orekit version is frozen in `environment.yml` to avoid breaking changes due to new Orekit major releases.
+The Orekit example notebooks are based on Orekit 12.1.1 (previously 10.2 IIRC). The Orekit version is frozen in `requirements.txt` to avoid breaking changes due to new Orekit major releases.
 
 ## Prerequisites
-* micromamba or mambaforge
 
-## Install conda environment
+* Python 3.7+
 
-Install the conda environment. For this, you can either import the environment.yml file into Anaconda Navigator, or use the command line
-`mamba env create -f environment.yml`
+## Create a venv and install dependencies
 
-If the environment already exists, update it using:
-`mamba env update -f environment.yml`
+Create a venv:
+
+```bash
+python -m venv .venv
+```
+
+Enter the venv:
+
+```bash
+source .venv/bin/activate
+```
+
+Install the dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
 
 # Use
 
-* Enter conda environment: `conda activate laserod` (or start a terminal directly in the environment using Anaconda Navigator)
+* Enter the venv: `source .venv/bin/activate`
 * Start Jupyter Lab: `jupyter lab`
 * Jupyter Lab should pop up in your browser at the URL http://localhost:8888
+
+Or just open the notebook in VSCode and select the `.venv` as kernel.
 
 # Updating data files
 ## Orekit data
