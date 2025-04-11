@@ -17,7 +17,6 @@ import slrDataUtils as slr
 
 
 USER = 'vanzach@mail.ntua.gr'
-PASSWD = '6inyqC4zaJmNEgFg2'
 
 REF_TIME = datetime.datetime(2015, 12, 15)
 
