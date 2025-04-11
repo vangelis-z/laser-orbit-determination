@@ -94,6 +94,14 @@ class SlrDlManager:
                 """ convert json string in python list """
                 data = json.loads(dl_response.text)
 
+                with open('CPF_OUTPUT_FILE.cpf', 'w') as cpf_output:
+                    # json.dump(dl_response, cpf_output)
+                    # dl_response.dumps(cpf_output)
+                    cpf_output.writelines(line + "\n" for line in data)
+                    # for line in data:
+                    #     cpf_output.write(line)
+                # print(data)
+
                 currentLine = ''
                 i = 0
                 n = len(data)
