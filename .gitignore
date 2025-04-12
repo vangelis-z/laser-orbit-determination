@@ -8,3 +8,5 @@ CPF_OUTPUT_FILE.cpf
 
 __pycache__/
 .ipynb_checkpoints/
+
+.edc.conf
